@@ -1,8 +1,8 @@
 import React from "react";
 
-const MovieCard = ({movie}) => {
+const MovieCard = ({ movie, onClick }) => { // Add the onClick prop here
     return(
-        <div className="movie">
+        <div className="movie" onClick={() => onClick(movie)}>
             <div>
                 <p>{movie.Year}</p>
             </div>

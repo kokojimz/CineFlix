@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard";
 import MovieDetailsModal from "./MovieDetailsModal";
 
 const key = process.env.REACT_APP_API_KEY;
-const API_URL = `http://www.omdbapi.com?apikey=${key}`;
+const API_URL = `https://www.omdbapi.com?apikey=${key}`;
 
 const App = () => {
     const [movies, setMovies] = useState([]);
